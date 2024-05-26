@@ -3,7 +3,7 @@ from tkinter import filedialog
 app = Ursina()
 window.color = color.black
 file = input('Напишите названия текстуры планеты:')
-planet_model = Entity(model = 'sphere', texture = f'sprites/{file}.jpg')
+planet_model = Entity(model = 'sphere', texture = f'{file}.jpg')
 def update():
     if held_keys['w']:
         planet_model.z -= 4 * time.dt
